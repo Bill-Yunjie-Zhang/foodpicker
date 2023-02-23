@@ -5,7 +5,7 @@ import './index.css';
 class Spinner extends React.Component {
   constructor(props) {
     super(props);
-    
+
     this.state = {
       selectedItem: null,
     };
@@ -35,8 +35,6 @@ class Spinner extends React.Component {
     };
     const spinning = selectedItem !== null ? 'spinning' : '';
 
-    console.log(items[selectedItem]);
-    
     return (
       <div className="wheel-container">
         <div className={`wheel ${spinning}`} style={wheelVars} onClick={this.selectItem}>
